@@ -1,0 +1,3 @@
+indent_style = space: Chỉ định rằng bạn nên sử dụng khoảng trắng (spaces) để thụt lề thay vì tab.
+
+indent_size = 4: Xác định số lượng khoảng trắng sử dụng cho mỗi mức thụt lề. Trong trường hợp này, mỗi mức thụt lề sẽ có 4 khoảng trắng.

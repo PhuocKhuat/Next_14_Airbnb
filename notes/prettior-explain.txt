@@ -1,0 +1,11 @@
+{
+    "arrowParens": "avoid", // Sử dụng () quanh tham số của arrow function.
+    "semi": false, // Không dùng dấu chấm phẩy
+    "trailingComma": "none", // Không có dấu phẩy ở phần tử cuối của đối tượng.
+    "tabWidth": 2,
+    "endOfLine": "auto", // Tự động xác định ký tự kết thúc dòng.
+    "useTabs": false, // Sử dụng dấu space thay vì tab để thụt lề.
+    "singleQuote": true, // Sử dụng dấu nháy đơn cho chuỗi.
+    "printWidth": 120, // Kích thước 1 dòng.
+    "jsxSingleQuote": true // Sử dụng dấu nháy đơn cho JSX.
+}

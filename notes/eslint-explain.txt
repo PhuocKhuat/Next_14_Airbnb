@@ -1,0 +1,34 @@
+rules:
+{
+    "react/jsx-uses-vars": "warn", // Cảnh báo nếu các biến được sử dụng trong JSX nhưng không được định nghĩa.
+    "jsx-a11y/anchor-is-valid": "warn", // Cảnh báo nếu một thẻ <a> không hợp lệ, thiếu thuộc tính href.
+    "import/no-unresolved": "warn", // Cảnh báo một mô-đun được import nhưng không được sử dụng.
+    "import/order": [ // Cảnh báo nếu các import không được sắp xếp theo thứ tự các nhóm: builtin, external, internal, parent, sibling, index.
+      "warn",
+      { "groups": ["builtin", "external", "internal", "parent", "sibling", "index"], "newlines-between": "always" }
+    ],
+    "import/newline-after-import": "warn", // Cảnh báo (warn) nếu không có dòng trống sau khi kết thúc một khối import.
+    "@typescript-eslint/explicit-module-boundary-types": "warn", // Cảnh báo nếu một hàm hoặc phương thức không có kiểu dữ liệu trả về hoặc không được chỉ định rõ ràng.
+    "@typescript-eslint/explicit-function-return-type": "warn", // Cảnh báo nếu không chỉ định kiểu dữ liệu trả về của function.
+    "@typescript-eslint/typedef": [ // Cảnh báo nếu không chỉ định kiểu dữ liệu cho biến, tham số, và các khai báo khác.
+      "warn",
+      {
+        "variableDeclaration": true,
+        "parameter": true,
+        "propertyDeclaration": true,
+        "memberVariableDeclaration": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "warn", // Cảnh báo nếu có biến được khai báo nhưng không được sử dụng.
+    "@typescript-eslint/no-explicit-any": "warn" // Cảnh báo nếu kiểu any được sử dụng.
+}
+"extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended", // Eslint sẽ kiểm tra Typescript.
+    "plugin:@typescript-eslint/recommended-requiring-type-checking", // Eslint sẽ yêu cầu kiểm tra loại dữ liệu Typescript.
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "eslint-config-prettier",
+    "next/core-web-vitals"
+  ],
